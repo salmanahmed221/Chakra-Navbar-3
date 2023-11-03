@@ -1,4 +1,4 @@
-import './globals.css'
+import ChakraWrapper from "./components/ChakraWrapper"
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ChakraWrapper>{children}</ChakraWrapper>
+      </body>
     </html>
   )
 }
